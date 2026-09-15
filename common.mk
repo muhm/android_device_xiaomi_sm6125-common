@@ -50,7 +50,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
-
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.lineage
@@ -72,7 +71,7 @@ PRODUCT_PACKAGES += \
     gralloc.qcom \
     hwcomposer.qcom
 
-$(call soong_config_set_bool,libui,legacy_gralloc,true
+$(call soong_config_set_bool,libui,legacy_gralloc,true)
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -99,6 +98,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
+
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
