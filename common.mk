@@ -50,9 +50,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
-# Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
 
 # Consumer IR
 PRODUCT_PACKAGES += \
